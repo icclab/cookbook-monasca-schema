@@ -107,7 +107,7 @@ CREATE TABLE `sub_alarm_definition` (
   `function` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
   `metric_name` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `operator` varchar(5) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `threshold` double NOT NULL,
+  `threshold` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
   `period` int(11) NOT NULL,
   `periods` int(11) NOT NULL,
   `created_at` datetime NOT NULL,
